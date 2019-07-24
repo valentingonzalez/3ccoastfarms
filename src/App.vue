@@ -20,14 +20,6 @@ export default {
 </script>
 
 <style>
-body {
-  margin: 0;
-  padding: 0;
-  background: #282828;
-}
-* {
-  outline: none !important;
-}
 #app {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,12 +27,7 @@ body {
   color: #FFF;
   background: #282828;
 }
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'YoungSerif' serif;
-}
-a {
-  text-decoration: none;
-}
+
 .social-links [class^=link] {
   width: 18px;
   height: 18px;

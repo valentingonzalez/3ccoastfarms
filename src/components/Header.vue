@@ -16,8 +16,6 @@
 </template>
 <script>
 export default {
-  data: () => ({
-  }),
   mounted() {
     // Look for .hamburger
     var hamburger = document.querySelector(".hamburger");
@@ -29,8 +27,6 @@ export default {
         mainNav.classList.toggle("is-active");
         // Do something else, like open/close menu
     });
-  },
-  methods: {
   }
 }
 
