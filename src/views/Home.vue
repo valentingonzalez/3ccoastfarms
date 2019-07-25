@@ -34,10 +34,13 @@
         <div class="home-explore">
           <h1 class="mx-auto row justify-content-center">Explore<br>Our Cannabis</h1>
           <div class="d-flex">
-            <div class="indica">
-              <CannabisList></CannabisList>
+            <div class="w-50 d-flex flex-column justify-content-center align-items-center mr-1">
+              <CannabisList :category="'Indica'"></CannabisList>
+              <router-link to="explore/indica" class="btn btn-primary mt-3 mb-5">View all Indica Strains</router-link>
             </div>
-            <div class="sativa-cbd">
+            <div class="w-50 d-flex flex-column justify-content-center align-items-center ml-1">
+              <CannabisList :category="'Sativa'"></CannabisList>
+              <router-link to="explore/sativa" class="btn btn-primary mt-3 mb-5">View all Indica Strains</router-link>
             </div>
           </div>
         </div>
@@ -73,10 +76,6 @@ export default {
   #heroSlider .VueCarousel {
     width: 520px;
     padding: 0 60px;
-  }
-  #heroSlider .VueCarousel .VueCarousel-navigation-button.VueCarousel-navigation-prev {
-    transform: rotate(180deg) translateX(60px);
-    transform-origin: 0 0;
   }
   .home-content {
     background-image: url(../assets/home-bg.png);

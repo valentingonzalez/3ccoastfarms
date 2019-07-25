@@ -20,13 +20,6 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #FFF;
-  background: #282828;
-}
 
 .social-links [class^=link] {
   width: 18px;
