@@ -34,6 +34,11 @@ p {
   line-height: 30px;
 }
 
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .btn {
   height: 44px;
   line-height: 44px;
@@ -44,6 +49,7 @@ p {
   font-weight: bold;
   border-radius: 0;
   border: none;
+  text-shadow: none;
 }
 .btn.btn-primary {
   background-image: linear-gradient(-135deg, #00CD23 0%, #2BB869 100%);
@@ -71,4 +77,32 @@ p {
 }
 .cannabis-list .VueCarousel .VueCarousel-navigation-button.VueCarousel-navigation-next {
   right: 50px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .VueCarousel-navigation-button {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 42px;
+  }
 }

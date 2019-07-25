@@ -87,9 +87,15 @@ export default {
     .cannabis-image {
         height: 100%;
         width: 100%;
+        background-repeat: no-repeat;
         background-size: contain;
         background-position: 50% 50%;
         background-blend-mode: lighten;
         background-color: #242424;
+    }
+    @media (max-width: 576px) {
+        .cannabis-item {
+            height: 430px;
+        }
     }
 </style>

@@ -4,12 +4,12 @@
             <div class="logo">
                 <img src="../assets/logo.png" width="165" alt="">
             </div>
-            <div>
+            <div class="footer-link-wrapper">
                 <div class="social-links">
                     <a href="https://fb.com/3Cfarms33" class="link-fb no-text"></a>
                     <a href="https://instagr.am/3c.farms" class="link-ig no-text"></a>
                 </div>
-                <nav class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-right">
+                <nav class="py-5 py-md-0 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-right">
                     <router-link to="/" class="nav-link">Home</router-link>
                     <router-link to="explore" class="nav-link">Explore Our Cannabis</router-link>
                     <router-link to="find" class="nav-link">Find 3C Cannabis</router-link>
@@ -52,7 +52,7 @@
         font-size: 11px;
         font-weight: 600;
         letter-spacing: 1.3px;
-    }   
+    }
     #mainFooter .social-links {
         text-align: right;
     }   
@@ -63,6 +63,15 @@
         }
         #mainFooter nav a.nav-link {
             margin-left: 0;
+        }
+        #mainFooter .social-links {
+            margin-top: -25px;
+        }
+        #mainFooter .footer-link-wrapper {
+            width: 100%;
+        }
+        #mainFooter .copyright {
+            text-align: left;
         }
     }
 </style>

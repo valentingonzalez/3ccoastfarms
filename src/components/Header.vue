@@ -1,13 +1,13 @@
 <template>
     <div id="mainNav">
-        <nav class="container d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+        <nav class="container d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-md-center">
             <router-link to="/" class="nav-link">Home</router-link>
             <router-link to="explore" class="nav-link">Explore Our Cannabis</router-link>
             <router-link to="/" class="nav-logo"><img src="../assets/logo.png" width="280" alt=""></router-link>
             <router-link to="find" class="nav-link">Find 3C Cannabis</router-link>
             <router-link to="contact" class="nav-link">Contact Us</router-link>
         </nav>
-        <button class="hamburger hamburger hamburger--spin d-md-none" type="button">
+        <button class="hamburger hamburger hamburger--spin d-lg-none" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
@@ -64,14 +64,13 @@ export default {
     .hamburger.is-active:hover {
         opacity: 1;
     }
-
     #mainNav .hamburger {
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 8px;
         transform: scale(.7);
     }
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
         #mainNav .nav-logo {
             order: 0;
             margin: 15px 15px 0 15px;
@@ -99,6 +98,15 @@ export default {
         #mainNav nav {
             height: auto;
             min-height: 70px;
+        }
+    }
+    @media (max-width: 768px) {
+        #mainNav .nav-logo {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        #mainNav .hamburger {
+            right: -5px;
         }
     }
 </style>
